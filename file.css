@@ -1,0 +1,14 @@
+body {
+  background-color: green; /* фон страницы */
+  font-family: Arial, sans-serif; /* шрифт */
+}
+
+h1 {
+  color: #ff6666; /* цвет заголовка */
+  text-align: center; /* выравнивание по центру */
+}
+
+p {
+  color: white; /* цвет текста */
+  font-size: 18px;
+}
