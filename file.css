@@ -12,3 +12,16 @@ p {
   color: white; /* цвет текста */
   font-size: 18px;
 }
+
+.horizontal {
+  display: flex;        /* делаем секцию флекс-контейнером */
+  gap: 20px;            /* расстояние между блоками */
+}
+
+.block {
+  background-color: #ff6666;
+  color: white;
+  padding: 20px;
+  flex: 2;              /* чтобы блоки растягивались одинаково */
+  text-align: center;
+}
