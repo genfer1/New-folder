@@ -29,18 +29,17 @@ html, body {
 }
 
 .captured-left, .captured-right {
-  position: fixed;      /* фиксируем относительно окна */
   top: 50%;             /* по центру вертикали */
   transform: translateY(-50%); /* центрируем точно по середине */
   width: 100px;         /* ширина клетки */
   height: 80vmin;       /* высота = высота доски */
   border: 2px solid black;
   background: white;    /* фон */
-  z-index: 10;          /* чтобы поверх доски */
 }
 
 .captured-left {
   left: 0;              /* прилипает к левому краю страницы */
+  position: relative left
 }
 
 .captured-right {
