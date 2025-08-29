@@ -1,27 +1,110 @@
-body {
-  background-color: rgb(75, 231, 231); /* фон страницы */
+html, body {
+  background-color: rgb(227, 155, 10); /* фон страницы */
   font-family: Arial, sans-serif; /* шрифт */
+  min-width: 300px;
+  min-height: 300px;
 }
 
-h1 {
-  color: #ff6666; /* цвет заголовка */
-  text-align: center; /* выравнивание по центру */
+.my-table {
+  margin: 0 auto;
+  width: 93vmin;
+  height: 93vmin;
+  min-width: 300px;
+  min-height: 300px;
+  border-collapse: collapse;
 }
 
-p {
-  color: white; /* цвет текста */
-  font-size: 18px;
+.my-table td {
+  border: 2px solid black;
+  width: 12.5%;
+  height: 12.5%;
+}
+.my-table1 {
+  margin: -1 auto;
+  width: 30vmin;
+  height: 30vmin;
+  min-width: 30px;
+  min-height: 30px;
+  border-collapse: collapse;
 }
 
-.horizontal {
-  display: flex;        /* делаем секцию флекс-контейнером */
-  gap: 20px;            /* расстояние между блоками */
+.captured-left, .captured-right {
+  position: fixed;      /* фиксируем относительно окна */
+  top: 50%;             /* по центру вертикали */
+  transform: translateY(-50%); /* центрируем точно по середине */
+  width: 100px;         /* ширина клетки */
+  height: 80vmin;       /* высота = высота доски */
+  border: 2px solid black;
+  background: white;    /* фон */
+  z-index: 10;          /* чтобы поверх доски */
 }
 
-.block {
-  background-color: #ff6666;
-  color: white;
+.captured-left {
+  left: 0;              /* прилипает к левому краю страницы */
+}
+
+.captured-right {
+  right: 0;             /* прилипает к правому краю страницы */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
   padding: 20px;
-  flex: 2;              /* чтобы блоки растягивались одинаково */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.section-content ul {
+  padding-left: 20px;
+}
+
+.section-content li {
+  margin-bottom: 8px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.back-link:hover {
+  background-color: #000000;
+}
+
+.blabla {
+  position: fixed;          /* фиксируем относительно окна */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* сдвигаем в центр */
+  color: white;
+  border-radius: 5px;
 }
